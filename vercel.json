@@ -1,39 +1,20 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/",
+      "destination": "/index.html"
     },
     {
-      "src": "/privacy-policy",
-      "dest": "/privacy-policy.html"
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
     },
     {
-      "src": "/privacy-policy.html",
-      "dest": "/privacy-policy.html"
+      "source": "/terms-and-conditions",
+      "destination": "/terms-and-conditions.html"
     },
     {
-      "src": "/terms-and-conditions",
-      "dest": "/terms-and-conditions.html"
-    },
-    {
-      "src": "/terms-and-conditions.html",
-      "dest": "/terms-and-conditions.html"
-    },
-    {
-      "src": "/terms",
-      "dest": "/terms-and-conditions.html"
-    },
-    {
-      "src": "/styles.css",
-      "dest": "/styles.css"
+      "source": "/terms",
+      "destination": "/terms-and-conditions.html"
     }
   ],
   "headers": [
